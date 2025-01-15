@@ -10,3 +10,8 @@ await page.screenshot({path: "./tests/tests-case/evidencias/login.png"});
 await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html');
 
 });
+
+test('Login com sucesso', async ({page}) =>{
+
+    
+})
