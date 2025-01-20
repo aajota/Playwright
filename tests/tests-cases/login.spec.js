@@ -16,3 +16,11 @@ test('Mercado Livre', async ({ page }) => {
   // Utilizando um seletor mais robusto baseado em texto parcial
   await expect(page.locator('*:contains("Kit Com 10 Cuecas Boxer Algodão Sem Costura Zorba")')).toBeVisible();
 });
+
+test('Mercado Livre', async ({ page }) => {
+  await page.goto('https://www.mercadolivre.com.br/');
+  await page.click('button[data-andes-carousel-snapped-control="next"]');
+
+  // Utilizando um seletor mais robusto baseado em texto parcial
+  await expect(page.locator('*:contains("Kit Com 10 Cuecas Boxer Algodão Sem Costura Zorba")')).toBeVisible();
+});
