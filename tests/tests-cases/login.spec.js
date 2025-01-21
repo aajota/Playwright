@@ -17,10 +17,18 @@ test('Mercado Livre', async ({ page }) => {
   await expect(page.locator('*:contains("Kit Com 10 Cuecas Boxer Algodão Sem Costura Zorba")')).toBeVisible();
 });
 
-test('Mercado Livre', async ({ page }) => {
-  await page.goto('https://www.mercadolivre.com.br/');
-  await page.click('button[data-andes-carousel-snapped-control="next"]');
+test(' taoks', async ({ page }) => {
+  await page.goto('https://www.taoks.com.br/');
+  await page.click('button[da-caroustrol="next"]');
 
   // Utilizando um seletor mais robusto baseado em texto parcial
-  await expect(page.locator('*:contains("Kit Com 10 Cuecas Boxer Algodão Sem Costura Zorba")')).toBeVisible();
+  await expect(page.locator('*:conxer Algodão Sem Costura Zorba")')).toBeVisible();
+});
+
+test(' Dota', async ({ page }) => {
+  await page.goto('https://www.dota.com.br/');
+  await page.click('button[data-l="next"]');
+
+  // Utilizando um seletor mais robusto baseado em texto parcial
+  await expect(page.locator('*:contains("Kit Coo Sem Costura Zorba")')).toBeVisible();
 });
