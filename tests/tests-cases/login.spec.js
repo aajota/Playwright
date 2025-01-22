@@ -32,3 +32,11 @@ test(' Dota', async ({ page }) => {
   // Utilizando um seletor mais robusto baseado em texto parcial
   await expect(page.locator('*:contains("Kit Coo Sem Costura Zorba")')).toBeVisible();
 });
+
+test(' Dota', async ({ page }) => {
+  await page.goto('https://www.dota.com.br/');
+  await page.click('button[data-l="next"]');
+
+  // Utilizando um seletor mais robusto baseado em texto parcial
+  await expect(page.locator('*:contains("Kit Coo Sem Costura Zorba")')).toBeVisible();
+});
